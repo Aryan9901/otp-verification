@@ -1,0 +1,142 @@
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 2rem;
+	height: 100%;
+	width: 100%;
+	> h2 {
+		font-size: 2rem;
+		font-family: Gilroy, Arial, Helvetica, sans-serif;
+	}
+	> .verify {
+		width: clamp(250px, 40%, 500px);
+		border-radius: 8px;
+		padding: 1.5rem 1rem;
+		box-shadow: 0px 0px 8px -4px #10182878;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 1rem;
+		> span {
+			height: 4rem;
+			width: 4rem;
+			/* padding: 1rem; */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			border: 1px solid #101828e7;
+			> svg {
+				font-size: 2rem;
+				font-weight: 800;
+				fill: #ed1d90;
+			}
+			background-color: #ffebf7;
+			border: 8px solid #f9f5ff;
+		}
+		> h3 {
+			font-size: 1.8rem;
+			font-weight: 500;
+			font-family: Gilroy;
+			color: #1d2939;
+			font-weight: 400;
+			text-align: center;
+		}
+		> h4 {
+			font-size: 1.2rem;
+			font-weight: 400;
+			font-family: Gilroy;
+			text-align: center;
+			color: #667085;
+			font-weight: 400;
+			> span {
+				font-weight: 600;
+			}
+		}
+		> div {
+			display: flex;
+			width: 100%;
+			margin: 0 auto;
+			flex-direction: column;
+			gap: 0.4rem;
+			align-items: flex-start;
+			justify-content: center;
+			> label {
+				color: #344054;
+			}
+			> input {
+				border-radius: 8px;
+				border: 1px solid #d0d5dd;
+				padding: 0.7rem 1rem;
+				width: 100%;
+				outline: none;
+				&::placeholder {
+					opacity: 0.4;
+					color: #d0d5dd;
+				}
+			}
+		}
+		> article {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			> button {
+				width: 48%;
+				padding: 0.7rem 1.6rem;
+				border-radius: 8px;
+				border: none;
+				font-size: 1.4rem;
+				font-weight: 400;
+				background-color: #fcfcfc;
+				&:first-child {
+					color: #000;
+					border: 0.5px solid #d0d5dd;
+				}
+				&:last-child {
+					color: #fff;
+					background-color: #ed1d90;
+				}
+			}
+		}
+	}
+}
+
+.inputs {
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inputs input {
+	width: 42px;
+	height: 36px;
+	text-align: center;
+	font-size: 1.7rem;
+	border: none;
+	border-bottom: 1.5px solid #d2d2d2;
+	margin: 0 10px;
+}
+
+.inputs input:focus {
+	border-bottom: 1.5px solid royalblue;
+	outline: none;
+}
+
+.action {
+	margin-top: 24px;
+	padding: 12px 16px;
+	border-radius: 8px;
+	border: none;
+	background-color: royalblue;
+	color: white;
+	cursor: pointer;
+	align-self: end;
+}
